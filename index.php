@@ -1,32 +1,38 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
-
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cadastro Login</title>
-  <link rel="stylesheet" href="./style/style.css">
   <link rel="shortcut icon" href="./img/favicon.png">
+  <link rel="stylesheet" href="./style/estilo.css">
+  <title>Login</title>
 </head>
-
 <body>
+  <div class="logoDiv">
+    <img src="./img/logo.png" alt="Logo Ares" class="logo">
+  </div>
   <div class="telaDeLogin">
-    <div class="loginContent">
-      <h1 class="loginText">Login</h1>
-      <div class="login">
-        <form action="./src/telaLogada.php" method="post">
+    <div class="login">
+      <div class="formLogin">
+      <h1 class="loginTitulo">Faça seu login! </h1>
+        <form action="" method="post">
           <label for="usuario">Usuario: </label><br>
-          <input type="text" class="loginInput" required><br><br>
+          <input type="text" name="ususario" class="inputLogin"><br><br>
 
-          <label for="senha">Senha:</label><br>
-          <input type="password" class="loginInput" required><br><br>
-          <button type="submit" class="entrar">Entrar</button>
+          <label for="senha">Senha: </label><br>
+          <input type="password" name="senha" class="inputLogin"><br><br>
+
+          <div class="areaBtn">
+            <button type="submit" class="entrar">Login</button>
+          </div>
         </form>
+        <h3 class="cadastro">Não tem uma conta? <b>Crie uma aqui!</b></h3>
       </div>
       
-      <h2 class="cadastra">Não tem uma conta? Então <a href="./src/telaCadastro.php" class="linkCadastra">Crie Uma!</a></h2>
     </div>
+    
   </div>
+  
 </body>
-
 </html>
