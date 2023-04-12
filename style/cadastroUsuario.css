@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;700&display=swap');
+
+:root {
+  --poppins: 'Poppins', sans-serif;
+}
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+
+body {
+  background: url(../img/bgfundo.jpg);
+  font-family: var(--poppins);
+}
+
+.telaCadastro{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quadroDeCadastro{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+  width: 400px;
+  height: 65%;
+}
+
+.cadastroTitulo{
+  font-size: 28px;
+}
+
+hr{
+  border: 1px solid black;
+}
+
+input{
+  box-shadow: inset 0px 0px 5px gray;
+  height: 28px;
+  width: 70%;
+  padding-left: 1em;
+  border-radius: 10px;
+}
+
+label{
+  display: flex;
+  justify-content: start;
+}
+
+.formCadastro{
+  padding: 1em;
+  font-size: 20px;
+  text-align: center;
+}
+
+.formCadastro form{
+  padding-top: 1em;
+}
+
+.cadastrar{
+  box-shadow: 0px 0px 5px gray;
+  padding: 0.5em 2em;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 12px;
+}
+
+.logoDiv{
+  display: none;
+}
+
+@media screen and (min-width:900px) {
+  .quadroDeCadastro{
+    width: 50%;
+  }
+
+.logoDiv{
+
+  width: 49%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo{
+  width: 250px;
+}
+  }
