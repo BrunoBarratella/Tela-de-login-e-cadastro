@@ -13,9 +13,12 @@ $recebe = $conectado->get();
 </form>
 
 <?php
+//Crio a condição onde se o $_GET['email'] estiver preenchido ele cumpre as condições abaixo
 if ($_GET['email']) {
+  //Crio um variavel onde atribuo a ela um array_search, que procura o conteudo do $_GET na minha variavel recebe com a chave com o valor de email_usuario
   $retorno = array_search($_GET['email'], array_column($recebe, 'email_usuario'));
 
+  //se a variavel retornar vazio digo que não existe aquele email, e caso contrario se retornar alguma coisa executa tudo abaixo
   if ($retorno == '') {
     echo "Parece que este email não foi cadastrado em nenhuma conta";
   } else {
